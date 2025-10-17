@@ -2,78 +2,131 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Simple Web Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Stylish Web Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <style>
+    /* Reset & base */
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background: #f4f4f4;
+      font-family: 'Poppins', sans-serif;
+      background: #f0f4f8;
       color: #333;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
 
     header {
-      background: #222;
-      color: #fff;
-      padding: 20px 0;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      padding: 25px 20px;
       text-align: center;
+      box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+      color: #fff;
+      font-weight: 600;
+      font-size: 1.8rem;
+      letter-spacing: 1.2px;
     }
 
     nav {
-      margin-top: 10px;
+      margin-top: 12px;
     }
 
     nav a {
-      color: #fff;
+      color: #e0e7ff;
       margin: 0 15px;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 500;
+      transition: color 0.3s ease;
     }
 
     nav a:hover {
-      text-decoration: underline;
+      color: #c3dafe;
     }
 
     .hero {
-      background: #007BFF;
-      color: white;
-      padding: 60px 20px;
+      background: white;
+      max-width: 900px;
+      margin: 40px auto 20px;
+      padding: 60px 30px;
+      border-radius: 12px;
+      box-shadow: 0 12px 25px rgba(118, 75, 162, 0.15);
       text-align: center;
     }
 
     .hero h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
+      font-size: 3rem;
+      margin-bottom: 15px;
+      color: #4a4a4a;
     }
 
     .hero p {
-      font-size: 1.2rem;
+      font-size: 1.25rem;
+      color: #666;
+      max-width: 600px;
+      margin: 0 auto;
     }
 
     .content {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
+      max-width: 700px;
+      margin: 30px auto 60px;
+      background: white;
+      padding: 30px 25px;
+      border-radius: 12px;
+      box-shadow: 0 8px 18px rgba(102, 126, 234, 0.12);
+    }
+
+    .content h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #333;
+      border-bottom: 2px solid #764ba2;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .content p {
+      font-size: 1.1rem;
+      color: #555;
+      line-height: 1.7;
     }
 
     footer {
+      background: #764ba2;
+      color: #e0e7ff;
       text-align: center;
-      padding: 20px;
-      background: #222;
-      color: #fff;
-      margin-top: 40px;
+      padding: 20px 15px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-top: auto;
+      box-shadow: 0 -3px 10px rgba(118, 75, 162, 0.25);
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .hero {
+        padding: 40px 20px;
+      }
+
+      .hero h1 {
+        font-size: 2.25rem;
+      }
+
+      .content {
+        padding: 25px 15px;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>My Awesome Website</h1>
+    My Stylish Website
     <nav>
       <a href="#">Home</a>
       <a href="#">Projects</a>
@@ -82,13 +135,15 @@
   </header>
 
   <section class="hero">
-    <h1>Welcome!</h1>
-    <p>This is a simple and clean web page built with HTML and CSS.</p>
+    <h1>Welcome to My Website</h1>
+    <p>Clean, modern, and responsive design ready for your projects or portfolio.</p>
   </section>
 
   <section class="content">
     <h2>About This Page</h2>
-    <p>This is a basic static site that you can deploy with Vercel. Customize the content, styles, and structure as needed for your project. This template is mobile-friendly and fast-loading, perfect for portfolios, resumes, or landing pages.</p>
+    <p>
+      This is a sleek, easy-to-customize static site template made with pure HTML and CSS. Perfect for showcasing your work, skills, or business with style and simplicity. Deploy on Vercel or any static host in minutes.
+    </p>
   </section>
 
   <footer>
